@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     PORT: int = 8000
     
     # Database
-    DATABASE_URL: str = "postgresql://anuu@/bot_suite?host=/var/run/postgresql"
+    DATABASE_URL: str = "postgresql://neondb_owner:npg_ireZ9TtLB7aH@ep-round-water-atfpaesr-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
     
     # JWT
     JWT_SECRET_KEY: str = "dev-secret-key-change-in-production"

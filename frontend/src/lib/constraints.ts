@@ -1,6 +1,6 @@
 export const APP_NAME = 'AgentSuite';
 export const APP_VERSION = '1.0.0';
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://agentsuite-api.onrender.com' || 'http://localhost:8000';
 export const WS_BASE_URL = import.meta.env.VITE_WS_URL || 'ws://localhost:8000';
 
 export const PAGINATION = {

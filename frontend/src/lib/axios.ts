@@ -1,7 +1,7 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { useAuthStore } from '../stores/auth.store';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000' || 'http://192.168.100.61:8000' || 'http://192.168.100.73:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://agentsuite-api.onrender.com' || 'http://localhost:8000'
 
 export const apiClient = axios.create({
   baseURL: `${API_BASE_URL}/api/v1`,

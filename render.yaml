@@ -2,9 +2,9 @@ services:
   - type: web
     name: agentsuite-api
     env: python
+    rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
-    workingDir: backend
     envVars:
       - key: DATABASE_URL
         value: postgresql://neondb_owner:npg_ireZ9TtLB7aH@ep-round-water-atfpaesr-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require
@@ -18,9 +18,9 @@ services:
   - type: web
     name: agentsuite-frontend
     env: static
+    rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: ./frontend/dist
-    workingDir: frontend
+    staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
         value: https://agentsuite-api.onrender.com

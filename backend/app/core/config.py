@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7
     
     # CORS
-    CORS_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:8000,http://192.168.100.61:5173,http://192.168.100.73:5173"
+    CORS_ORIGINS: str = "https://agentsuite-frontend.onrender.com,http://localhost:5173,http://localhost:3000,http://localhost:8000"
     
     # Redis
     REDIS_URL: str = "redis://localhost:6379/0"
